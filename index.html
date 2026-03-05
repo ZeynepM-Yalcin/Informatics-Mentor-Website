@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informatics Mentor Ltd — Data Engineering, Business Intelligence, Data Warehouse, Software Development and Project Management consultancy.">
+  <title>Informatics Mentor Ltd — Your IT Companion</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/informatics_mentor_logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+    <a href="#hero">Home</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#hero" class="nav-logo">
+      <img src="images/informatics_mentor_logo.png" alt="Informatics Mentor" width="38" height="38">
+      <span class="logo-text">Informatics<br>Mentor Ltd</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="dot-grid"></div>
+      <div class="pipeline-canvas">
+        <div class="pipeline-node" style="top:18%;left:12%"></div>
+        <div class="pipeline-node blue" style="top:32%;left:28%"></div>
+        <div class="pipeline-node green" style="top:22%;left:45%"></div>
+        <div class="pipeline-node" style="top:65%;left:68%"></div>
+        <div class="pipeline-node blue" style="top:75%;left:85%"></div>
+        <div class="pipeline-node green" style="top:50%;left:52%"></div>
+        <div class="pipeline-line" style="top:20%;left:14%;width:280px;animation-delay:-1s"></div>
+        <div class="pipeline-line blue" style="top:34%;left:30%;width:200px;animation-delay:-2.5s"></div>
+        <div class="pipeline-line" style="top:67%;left:55%;width:350px;animation-delay:-4s"></div>
+        <div class="data-packet" style="top:19.5%;left:14%;animation-delay:0s"></div>
+        <div class="data-packet" style="top:33.5%;left:30%;animation-delay:-2s"></div>
+        <div class="data-packet" style="top:66.5%;left:55%;animation-delay:-3.5s"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-label">
+        <span class="blink"></span> Data Engineering &amp; Technology Consultancy
+      </div>
+      <h1 class="hero-title">
+        <span class="line"><span>Engineer</span></span>
+        <span class="line"><span>your <em class="accent">Data.</em></span></span>
+        <span class="line"><span class="outline-text">Power Decisions.</span></span>
+      </h1>
+      <p class="hero-desc">
+        From raw data to real insight — we build the pipelines, warehouses, and intelligence layers that transform how your organisation operates.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          Start a conversation
+          <svg class="arrow-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#services" class="btn-secondary">
+          Explore services
+          <svg class="arrow-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Decorative code block -->
+    <div class="hero-code">
+      <div class="hero-code-bar">
+        <div class="hero-code-dot" style="background:#ff5f57"></div>
+        <div class="hero-code-dot" style="background:#febc2e"></div>
+        <div class="hero-code-dot" style="background:#28c840"></div>
+        <span>pipeline.py</span>
+      </div>
+      <div class="hero-code-body">
+        <div class="type-line"><span class="cm"># Extract → Transform → Load</span></div>
+        <div class="type-line"><span class="kw">from</span> mentor <span class="kw">import</span> Pipeline</div>
+        <div class="type-line">&nbsp;</div>
+        <div class="type-line">pipe <span class="op">=</span> Pipeline(<span class="str">"sales_data"</span>)</div>
+        <div class="type-line">pipe.<span class="fn">extract</span>(source<span class="op">=</span><span class="str">"crm_db"</span>)</div>
+        <div class="type-line">pipe.<span class="fn">transform</span>(clean<span class="op">=</span><span class="kw">True</span>)</div>
+        <div class="type-line">pipe.<span class="fn">load</span>(target<span class="op">=</span><span class="str">"warehouse"</span>)</div>
+        <div class="type-line"><span class="cm"># ✓ 2.4M rows processed</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="stat" data-target="15">
+      <div class="stat-num"><span class="count">0</span><em>+</em></div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat" data-target="80">
+      <div class="stat-num"><span class="count">0</span><em>+</em></div>
+      <div class="stat-label">Projects Delivered</div>
+    </div>
+    <div class="stat" data-target="6">
+      <div class="stat-num"><span class="count">0</span></div>
+      <div class="stat-label">Service Areas</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">100<em>%</em></div>
+      <div class="stat-label">Client Commitment</div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">What we do</p>
+        <h2 class="section-title">Our <span class="outline-text">Services</span></h2>
+        <p class="section-subtitle">End-to-end technology consultancy — from data strategy and architecture through to delivery, testing, and long-term support.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <rect x="1" y="4" width="20" height="14" rx="2" stroke="#8DC63F" stroke-width="1.5"/>
+              <path d="M6 11l3 3 5-5" stroke="#8DC63F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="service-num">01</div>
+          <h3 class="service-card-title">Software Development & Test Automation</h3>
+          <p class="service-desc">Enterprise integrations, web frontends, mobile apps, and intranet portals — plus comprehensive test automation for bug-free releases.</p>
+          <div class="service-tags">
+            <span class="service-tag">.NET</span>
+            <span class="service-tag">Python</span>
+            <span class="service-tag">Selenium</span>
+          </div>
+          <button class="service-expand-btn">Learn more <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="service-detail"><div class="service-detail-inner">
+            <p>We build scalable, maintainable software tailored to your business processes. Our test automation practice ensures continuous quality through every release cycle.</p>
+            <div class="service-detail-list">
+              <span class="service-detail-item">CI/CD Pipelines</span>
+              <span class="service-detail-item">API Development</span>
+              <span class="service-detail-item">Unit & Integration Testing</span>
+              <span class="service-detail-item">Regression Suites</span>
+              <span class="service-detail-item">Code Reviews</span>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <rect x="2" y="12" width="4" height="8" rx="1" fill="#F7941D" opacity="0.7"/>
+              <rect x="9" y="8" width="4" height="12" rx="1" fill="#F7941D"/>
+              <rect x="16" y="4" width="4" height="16" rx="1" fill="#F7941D" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="service-num">02</div>
+          <h3 class="service-card-title">Business Intelligence</h3>
+          <p class="service-desc">BI solutions that unlock hidden value in your information assets and facilitate smarter, faster decision-making across your entire organisation.</p>
+          <div class="service-tags">
+            <span class="service-tag">Power BI</span>
+            <span class="service-tag">SSRS</span>
+            <span class="service-tag">Tableau</span>
+          </div>
+          <button class="service-expand-btn">Learn more <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="service-detail"><div class="service-detail-inner">
+            <p>Transform raw data into actionable dashboards, KPI tracking, and executive reporting. We design self-service BI platforms your whole team can use.</p>
+            <div class="service-detail-list">
+              <span class="service-detail-item">Dashboard Design</span>
+              <span class="service-detail-item">KPI Frameworks</span>
+              <span class="service-detail-item">Self-Service Analytics</span>
+              <span class="service-detail-item">Data Visualisation</span>
+              <span class="service-detail-item">Report Automation</span>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <ellipse cx="11" cy="6" rx="9" ry="3.5" stroke="#29ABE2" stroke-width="1.5"/>
+              <path d="M2 6v5c0 1.93 4.03 3.5 9 3.5s9-1.57 9-3.5V6" stroke="#29ABE2" stroke-width="1.5"/>
+              <path d="M2 11v5c0 1.93 4.03 3.5 9 3.5s9-1.57 9-3.5v-5" stroke="#29ABE2" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="service-num">03</div>
+          <h3 class="service-card-title">Data Warehouse</h3>
+          <p class="service-desc">A single source of truth — scalable, reliable data warehouse systems built to power analytics, reporting, and decision intelligence.</p>
+          <div class="service-tags">
+            <span class="service-tag">Snowflake</span>
+            <span class="service-tag">SQL Server</span>
+            <span class="service-tag">dbt</span>
+          </div>
+          <button class="service-expand-btn">Learn more <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="service-detail"><div class="service-detail-inner">
+            <p>We design and implement modern data warehouse architectures that unify disparate data sources into a governed, performant analytical layer.</p>
+            <div class="service-detail-list">
+              <span class="service-detail-item">Dimensional Modelling</span>
+              <span class="service-detail-item">ETL/ELT Pipelines</span>
+              <span class="service-detail-item">Data Governance</span>
+              <span class="service-detail-item">Schema Design</span>
+              <span class="service-detail-item">Migration</span>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <rect x="2" y="2" width="8" height="8" rx="2" stroke="#C1272D" stroke-width="1.5"/>
+              <rect x="12" y="2" width="8" height="8" rx="2" stroke="#C1272D" stroke-width="1.5" opacity="0.5"/>
+              <rect x="2" y="12" width="8" height="8" rx="2" stroke="#C1272D" stroke-width="1.5" opacity="0.5"/>
+              <rect x="12" y="12" width="8" height="8" rx="2" stroke="#C1272D" stroke-width="1.5" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="service-num">04</div>
+          <h3 class="service-card-title">Project Management</h3>
+          <p class="service-desc">On time, within budget, to specification — with complete transparency and agile or waterfall delivery to suit your organisation.</p>
+          <div class="service-tags">
+            <span class="service-tag">Agile</span>
+            <span class="service-tag">PRINCE2</span>
+            <span class="service-tag">Scrum</span>
+          </div>
+          <button class="service-expand-btn">Learn more <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="service-detail"><div class="service-detail-inner">
+            <p>Whether you need a dedicated PM or strategic oversight, we bring structure, communication, and accountability to complex technical programmes.</p>
+            <div class="service-detail-list">
+              <span class="service-detail-item">Stakeholder Management</span>
+              <span class="service-detail-item">Risk Mitigation</span>
+              <span class="service-detail-item">Sprint Planning</span>
+              <span class="service-detail-item">Delivery Roadmaps</span>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M11 2L2 7v8l9 5 9-5V7L11 2z" stroke="#005580" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M2 7l9 5 9-5" stroke="#005580" stroke-width="1.5"/>
+              <path d="M11 12v8" stroke="#005580" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="service-num">05</div>
+          <h3 class="service-card-title">Education & Training</h3>
+          <p class="service-desc">Onsite and open-class training in System Analysis, Software Development, Database Management, and Microsoft Office technologies.</p>
+          <div class="service-tags">
+            <span class="service-tag">Workshops</span>
+            <span class="service-tag">Certification</span>
+            <span class="service-tag">Mentoring</span>
+          </div>
+          <button class="service-expand-btn">Learn more <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="service-detail"><div class="service-detail-inner">
+            <p>Upskill your team with tailored training programmes — from foundational database skills to advanced data engineering practices.</p>
+            <div class="service-detail-list">
+              <span class="service-detail-item">SQL Masterclass</span>
+              <span class="service-detail-item">Python for Data</span>
+              <span class="service-detail-item">BI Tool Training</span>
+              <span class="service-detail-item">Custom Curricula</span>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <circle cx="11" cy="11" r="4" stroke="#1B7B3A" stroke-width="1.5"/>
+              <circle cx="11" cy="11" r="9" stroke="#1B7B3A" stroke-width="1.5" opacity="0.3" stroke-dasharray="3 2.5"/>
+              <path d="M11 2v3M11 17v3M2 11h3M17 11h3" stroke="#1B7B3A" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="service-num">06</div>
+          <h3 class="service-card-title">IT Service & Support</h3>
+          <p class="service-desc">Responsive, reliable support to keep your staff productive and systems running — on hand when it matters most.</p>
+          <div class="service-tags">
+            <span class="service-tag">Helpdesk</span>
+            <span class="service-tag">Monitoring</span>
+            <span class="service-tag">SLA</span>
+          </div>
+          <button class="service-expand-btn">Learn more <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="service-detail"><div class="service-detail-inner">
+            <p>From proactive monitoring to break-fix support, we ensure your technology estate stays healthy, secure, and performant.</p>
+            <div class="service-detail-list">
+              <span class="service-detail-item">24/7 Monitoring</span>
+              <span class="service-detail-item">Incident Response</span>
+              <span class="service-detail-item">Infrastructure</span>
+              <span class="service-detail-item">Security Audits</span>
+            </div>
+          </div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="tech-stack">
+    <div class="container reveal" style="margin-bottom:32px;">
+      <p class="section-label">Technology Stack</p>
+    </div>
+    <div class="tech-marquee">
+      <div class="tech-marquee-inner">
+        <div class="tech-item"><div class="tech-icon" style="color:#29ABE2">&#10052;</div><span class="tech-name">Snowflake</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#F7941D">&#9650;</div><span class="tech-name">Azure</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#8DC63F">&#9729;</div><span class="tech-name">AWS</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#F7941D">&#8862;</div><span class="tech-name">Power BI</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#29ABE2">&#9670;</div><span class="tech-name">SQL Server</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#8DC63F">&#11041;</div><span class="tech-name">Python</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#C1272D">&#9881;</div><span class="tech-name">dbt</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#F7941D">&#10731;</div><span class="tech-name">SSIS</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#29ABE2">&#11042;</div><span class="tech-name">Spark</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#8DC63F">&#8853;</div><span class="tech-name">Tableau</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#C1272D">&#9672;</div><span class="tech-name">Selenium</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#F7941D">&#11039;</div><span class="tech-name">.NET</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#29ABE2">&#8865;</div><span class="tech-name">Databricks</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#8DC63F">&#11043;</div><span class="tech-name">Airflow</span></div>
+      </div>
+      <div class="tech-marquee-inner">
+        <div class="tech-item"><div class="tech-icon" style="color:#29ABE2">&#10052;</div><span class="tech-name">Snowflake</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#F7941D">&#9650;</div><span class="tech-name">Azure</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#8DC63F">&#9729;</div><span class="tech-name">AWS</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#F7941D">&#8862;</div><span class="tech-name">Power BI</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#29ABE2">&#9670;</div><span class="tech-name">SQL Server</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#8DC63F">&#11041;</div><span class="tech-name">Python</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#C1272D">&#9881;</div><span class="tech-name">dbt</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#F7941D">&#10731;</div><span class="tech-name">SSIS</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#29ABE2">&#11042;</div><span class="tech-name">Spark</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#8DC63F">&#8853;</div><span class="tech-name">Tableau</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#C1272D">&#9672;</div><span class="tech-name">Selenium</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#F7941D">&#11039;</div><span class="tech-name">.NET</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#29ABE2">&#8865;</div><span class="tech-name">Databricks</span></div>
+        <div class="tech-item"><div class="tech-icon" style="color:#8DC63F">&#11043;</div><span class="tech-name">Airflow</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Case Studies</p>
+        <h2 class="section-title">Featured <span class="outline-text">Projects</span></h2>
+        <p class="section-subtitle">Real-world engagements where we helped organisations transform their data capabilities and drive measurable business outcomes.</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-type">Data Engineering</div>
+          <h3 class="project-title">Cloud Data Platform Migration for Financial Services</h3>
+          <p class="project-desc">Migrated a legacy on-premise SQL Server data warehouse to a modern Snowflake-based cloud platform, reducing query times by 85% and enabling real-time reporting.</p>
+          <div class="project-meta">
+            <div class="project-meta-item"><strong>Industry</strong> Financial Services</div>
+            <div class="project-meta-item"><strong>Duration</strong> 8 months</div>
+            <div class="project-meta-item"><strong>Impact</strong> 85% faster queries</div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">Snowflake</span>
+            <span class="project-tech-tag">dbt</span>
+            <span class="project-tech-tag">Azure Data Factory</span>
+            <span class="project-tech-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-type">Business Intelligence</div>
+          <h3 class="project-title">Executive BI Dashboard Suite for Retail Chain</h3>
+          <p class="project-desc">Designed and delivered a comprehensive Power BI dashboard suite covering sales, inventory, and customer analytics — replacing 40+ manual spreadsheet reports.</p>
+          <div class="project-meta">
+            <div class="project-meta-item"><strong>Industry</strong> Retail</div>
+            <div class="project-meta-item"><strong>Duration</strong> 4 months</div>
+            <div class="project-meta-item"><strong>Impact</strong> 40+ reports replaced</div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">Power BI</span>
+            <span class="project-tech-tag">SQL Server</span>
+            <span class="project-tech-tag">SSAS</span>
+            <span class="project-tech-tag">DAX</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-type">Data Warehouse</div>
+          <h3 class="project-title">Unified Data Warehouse for Healthcare Provider</h3>
+          <p class="project-desc">Consolidated 12 disparate clinical and administrative data sources into a single governed data warehouse, enabling cross-departmental analytics for the first time.</p>
+          <div class="project-meta">
+            <div class="project-meta-item"><strong>Industry</strong> Healthcare</div>
+            <div class="project-meta-item"><strong>Duration</strong> 12 months</div>
+            <div class="project-meta-item"><strong>Impact</strong> 12 sources unified</div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">SQL Server</span>
+            <span class="project-tech-tag">SSIS</span>
+            <span class="project-tech-tag">Dimensional Model</span>
+            <span class="project-tech-tag">SSRS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-type">Software & Testing</div>
+          <h3 class="project-title">Test Automation Framework for Insurance Platform</h3>
+          <p class="project-desc">Built a comprehensive Selenium-based test automation framework that reduced regression testing from 5 days to 4 hours while improving coverage to 92%.</p>
+          <div class="project-meta">
+            <div class="project-meta-item"><strong>Industry</strong> Insurance</div>
+            <div class="project-meta-item"><strong>Duration</strong> 6 months</div>
+            <div class="project-meta-item"><strong>Impact</strong> 95% time saved</div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">Selenium</span>
+            <span class="project-tech-tag">C#</span>
+            <span class="project-tech-tag">Azure DevOps</span>
+            <span class="project-tech-tag">SpecFlow</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-visual-bg"><div class="dot-grid"></div></div>
+          <div class="schema-diagram">
+            <div class="schema-table">
+              <div class="schema-table-name">dim_customer</div>
+              <div class="schema-field"><span class="pk">PK</span> customer_id <span class="type">INT</span></div>
+              <div class="schema-field">&nbsp;&nbsp;&nbsp; full_name <span class="type">VARCHAR</span></div>
+              <div class="schema-field">&nbsp;&nbsp;&nbsp; segment <span class="type">VARCHAR</span></div>
+              <div class="schema-field">&nbsp;&nbsp;&nbsp; region <span class="type">VARCHAR</span></div>
+            </div>
+            <div class="schema-connector"></div>
+            <div class="schema-table">
+              <div class="schema-table-name">fact_orders</div>
+              <div class="schema-field"><span class="pk">PK</span> order_id <span class="type">INT</span></div>
+              <div class="schema-field"><span class="fk">FK</span> customer_id <span class="type">INT</span></div>
+              <div class="schema-field"><span class="fk">FK</span> product_id <span class="type">INT</span></div>
+              <div class="schema-field">&nbsp;&nbsp;&nbsp; order_total <span class="type">DECIMAL</span></div>
+              <div class="schema-field">&nbsp;&nbsp;&nbsp; order_date <span class="type">DATE</span></div>
+            </div>
+            <div class="schema-connector"></div>
+            <div class="schema-table">
+              <div class="schema-table-name">dim_product</div>
+              <div class="schema-field"><span class="pk">PK</span> product_id <span class="type">INT</span></div>
+              <div class="schema-field">&nbsp;&nbsp;&nbsp; product_name <span class="type">VARCHAR</span></div>
+              <div class="schema-field">&nbsp;&nbsp;&nbsp; category <span class="type">VARCHAR</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-label">Who we are</p>
+          <h2 class="section-title">Your <span class="accent">IT</span> Companion</h2>
+          <p>Informatics Mentor is a technology consultancy covering all branches of information systems — from Data Engineering and Business Intelligence through to Software Development, Testing, and Support.</p>
+          <p>We provide solutions spanning strategy and architecture all the way to technical delivery and long-term support. Our mission: to accompany you in increasing business profits and performance using the best tools and techniques available.</p>
+          <div class="about-values">
+            <div class="about-value">
+              <div class="about-value-title">Technical Depth</div>
+              <div class="about-value-desc">Certified expertise in every service area we offer</div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-title">End-to-End</div>
+              <div class="about-value-desc">Strategy through delivery and ongoing support</div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-title">Data-First</div>
+              <div class="about-value-desc">Every decision backed by evidence and analytics</div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-title">Partnership</div>
+              <div class="about-value-desc">We work with you, not just for you</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">Let's talk about<br>your <span class="accent">data.</span></h2>
+        <p>Whether you're starting a new data initiative, modernising legacy systems, or need ongoing support — we'd love to hear from you.</p>
+        <div class="contact-methods">
+          <a href="mailto:info@informaticsmentor.com" class="contact-method">
+            <div class="contact-method-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="4" width="16" height="12" rx="2" stroke="#F7941D" stroke-width="1.5"/>
+                <path d="M2 6l8 5 8-5" stroke="#F7941D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-method-label">Email</div>
+              <div class="contact-method-value">info@informaticsmentor.com</div>
+            </div>
+          </a>
+          <a href="http://informaticsmentor.com" target="_blank" rel="noopener" class="contact-method">
+            <div class="contact-method-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="8" stroke="#F7941D" stroke-width="1.5"/>
+                <ellipse cx="10" cy="10" rx="4" ry="8" stroke="#F7941D" stroke-width="1.5"/>
+                <path d="M2 10h16" stroke="#F7941D" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-method-label">Website</div>
+              <div class="contact-method-value">informaticsmentor.com</div>
+            </div>
+          </a>
+        </div>
+        <a href="mailto:info@informaticsmentor.com" class="btn-primary" style="margin-top:8px;">
+          Send us an email
+          <svg class="arrow-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 class="cta-title">Ready to <span class="accent">transform</span><br>your data strategy?</h2>
+      <p class="cta-sub">From strategy to delivery, we're with you every step — let's build something that drives real business value.</p>
+      <div class="cta-btns">
+        <a href="mailto:info@informaticsmentor.com" class="btn-primary">
+          Get in Touch
+          <svg class="arrow-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#services" class="btn-secondary">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <img src="images/informatics_mentor_logo.png" alt="Informatics Mentor" width="32" height="32">
+            <span class="logo-text">Informatics<br>Mentor Ltd</span>
+          </a>
+          <p>Technology consultancy from strategy and architecture to technical delivery and support. Your IT companion.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Services</p>
+          <ul class="footer-list">
+            <li><a href="#services">Software Development</a></li>
+            <li><a href="#services">Business Intelligence</a></li>
+            <li><a href="#services">Data Warehouse</a></li>
+            <li><a href="#services">Project Management</a></li>
+            <li><a href="#services">Training & Education</a></li>
+            <li><a href="#services">IT Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Company</p>
+          <ul class="footer-list">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Contact</p>
+          <ul class="footer-list">
+            <li><a href="mailto:info@informaticsmentor.com">info@informaticsmentor.com</a></li>
+            <li><a href="http://informaticsmentor.com" target="_blank" rel="noopener">informaticsmentor.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Informatics Mentor Ltd. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#hero">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
